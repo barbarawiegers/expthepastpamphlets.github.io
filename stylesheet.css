@@ -5,7 +5,5 @@ body {
 h1 {
   color: #251d1a;
   margin-left: 20px;
-  font-family: "Uncial Antiqua", system-ui;
-  font-weight: 400;
-  font-style: normal
+  @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 }
