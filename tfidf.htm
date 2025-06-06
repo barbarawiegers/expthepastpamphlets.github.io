@@ -1,1 +1,93 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Exploring the Past Final Assignment</title>
+    <script>
+      function showImage(id) {
+        const images = ['img0', 'img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8', 'img9'];
+        images.forEach(img => {
+          document.getElementById(img).style.display = (img === id) ? "block" : "none";
+        });
+      }
+    </script>
+    <style>
 
+      .container {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .image-container img {
+        max-width: 600px;
+        height: auto;
+        display: none;
+      }
+
+      .button-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+
+      .paragraphs-container {
+        max-width: 600px;
+        margin-left: auto; 
+        text-align: right; 
+      }
+
+      .paragraphs-container p {
+        margin-bottom: 1em; 
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>English pamphlets in the seventeenth century</h1>
+    <h2>Salient words in each decade</h2>
+    <a href = "index.htm" style="
+        background-color: #900C3F;
+        color: #ece2c4;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;">Back to homepage</a>
+
+    <div class="container">
+      <div class="image-container">
+        <img id="img0" src="tfidf_00s.png">
+        <img id="img1" src="tfidf_10s.png">
+        <img id="img2" src="tfidf_20s.png">
+        <img id="img3" src="tfidf_30s.png">
+        <img id="img4" src="tfidf_40s.png">
+        <img id="img5" src="tfidf_50s.png">
+        <img id="img6" src="tfidf_60s.png">
+        <img id="img7" src="tfidf_70s.png">
+        <img id="img8" src="tfidf_80s.png">
+        <img id="img9" src="tfidf_90s.png">
+      </div>
+
+      <div class="button-panel">
+        <button onclick="showImage('img0')">1600–1610</button>
+        <button onclick="showImage('img1')">1610–1620</button>
+        <button onclick="showImage('img2')">1620–1630</button>
+        <button onclick="showImage('img3')">1630–1640</button>
+        <button onclick="showImage('img4')">1640–1650</button>
+        <button onclick="showImage('img5')">1650–1660</button>
+        <button onclick="showImage('img6')">1660–1670</button>
+        <button onclick="showImage('img7')">1670–1680</button>
+        <button onclick="showImage('img8')">1680–1690</button>
+        <button onclick="showImage('img9')">1690–1700</button>
+      </div>
+
+      <div class="paragraphs-container">
+        <p>
+          This page shows the TF-IDF scores for words in each decade, which is a way of showing which words stand out each decade when referenced to the entire
+          century. Words that have a high TF-IDF score in the 1610's, for example, occur a lot in pamphlets from the 1610's but not as often in the other decades.
+        </p>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
