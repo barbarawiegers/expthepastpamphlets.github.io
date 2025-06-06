@@ -98,3 +98,9 @@ footer {
   font-size: 0.9em;
   color: #7c6a58;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
