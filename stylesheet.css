@@ -13,3 +13,7 @@ p {
   text-align: center;
   marglin-left: 20px;
 }
+
+a:link, a:visited {
+  color: #900C3F;
+}
