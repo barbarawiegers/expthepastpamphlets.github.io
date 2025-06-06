@@ -1,8 +1,6 @@
-/* stylesheet.css */
 
-/* Base styling */
 body {
-  background-color: #f9f4e8; /* parchment-like */
+  background-color: #f9f4e8; 
   color: #3b2f2f;
   font-family: 'Georgia', serif;
   margin: 0;
@@ -10,7 +8,6 @@ body {
   line-height: 1.6;
 }
 
-/* Page title and headers */
 h1, h2, h3 {
   text-align: center;
   color: #4b3832;
@@ -29,7 +26,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Paragraphs */
 p {
   max-width: 800px;
   margin: 20px auto;
@@ -42,23 +38,13 @@ p {
   box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
 }
 
-/* Links */
 a:link, a:visited {
-  background-color: #7e4a35;
   color: #fcebd0;
-  padding: 10px 18px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
 
-a:hover, a:focus {
-  background-color: #5a3325;
-}
 
-/* Buttons */
+
 button {
   font-family: 'Georgia', serif;
   background-color: #a36d4f;
@@ -75,7 +61,6 @@ button:hover {
   background-color: #7d4d39;
 }
 
-/* Flex layout containers */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +84,6 @@ button:hover {
   gap: 10px;
 }
 
-/* Optional decorative styling */
 hr {
   border: 0;
   height: 1px;
