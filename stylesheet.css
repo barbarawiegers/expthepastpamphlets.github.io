@@ -1,45 +1,35 @@
+/* stylesheet.css */
+
+/* Base styling */
 body {
-  background-image: url("background.png");
-  font-family: Arial, sans-serif;
+  background-color: #f9f4e8; /* parchment-like */
+  color: #3b2f2f;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Page title and headers */
+h1, h2, h3 {
+  text-align: center;
+  color: #4b3832;
+  margin-top: 30px;
 }
 
 h1 {
-  color: #581845;
-  margin-left: 20px;
-  text-align: center;
+  font-size: 2.5em;
+  border-bottom: 2px solid #8b6f47;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #581845;
-  margin-left: 20px;
-  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-h3{
-  color: #581845;
-  margin-left: 20px;
-  text-align: center;
-}
-
+/* Paragraphs */
 p {
-  color: #581845;
-  text-align: center;
-  marglin-left: 20px;
-}
-
-a:link, a:visited {
-  color: #900C3F;
-}
-
-button {
-  padding: 8px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  border: none;
-  background-color: #900C3F;
-  color: #ece2c4;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 4px;
-  
-}
+  max-width: 800px;
+  margin
