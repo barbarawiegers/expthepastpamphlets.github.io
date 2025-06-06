@@ -5,4 +5,10 @@ body {
 h1 {
   color: #251d1a;
   margin-left: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  marglin-left: 20px;
 }
