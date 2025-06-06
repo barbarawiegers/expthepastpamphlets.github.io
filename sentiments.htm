@@ -1,1 +1,85 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Exploring the Past Final Assignment</title>
+    <script>
+      function showImage(id) {
+        const images = ['overall', 'img0', 'img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8', 'img9'];
+        images.forEach(img => {
+          document.getElementById(img).style.display = (img === id) ? "block" : "none";
+        });
+      }
+    </script>
+    <style>
 
+      .container {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .image-container img {
+        max-width: 600px;
+        height: auto;
+        display: none;
+      }
+
+      .button-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+      a:link, a:visited {
+      background-color: #900C3F;
+      color: #ece2c4;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>English pamphlets in the seventeenth century</h1>
+    <h2>Sentiment analysis in seventeenth century pamphlets</h2>
+    <p><a href = "index.htm">Back to homepage</a></p>
+
+    <div class="container">
+      <div class="image-container">
+        <img id="overall" src="sent_overall.png">
+        <img id="img0" src="sent_00s.png">
+        <img id="img1" src="sent_10s.png">
+        <img id="img2" src="sent_20s.png">
+        <img id="img3" src="sent_30s.png">
+        <img id="img4" src="sent_40s.png">
+        <img id="img5" src="sent_50s.png">
+        <img id="img6" src="sent_60s.png">
+        <img id="img7" src="sent_70s.png">
+        <img id="img8" src="sent_80s.png">
+        <img id="img9" src="sent_90s.png">
+      </div>
+
+      <div class="button-panel">
+        <button onclick="showImage('overall')">1600–1700</button>
+        <button onclick="showImage('img0')">1600–1610</button>
+        <button onclick="showImage('img1')">1610–1620</button>
+        <button onclick="showImage('img2')">1620–1630</button>
+        <button onclick="showImage('img3')">1630–1640</button>
+        <button onclick="showImage('img4')">1640–1650</button>
+        <button onclick="showImage('img5')">1650–1660</button>
+        <button onclick="showImage('img6')">1660–1670</button>
+        <button onclick="showImage('img7')">1670–1680</button>
+        <button onclick="showImage('img8')">1680–1690</button>
+        <button onclick="showImage('img9')">1690–1700</button>
+      </div>
+       <p style="display: inline-block; max-width: 600px;" float: right>
+      In pamphlets all throughout the seventeenth century, the most used words seem to be very similar; they are all words pertaining to god or royalty. 
+      In the seventeenth century, religion and the church were deeply intertwined with daily life as well as politics. Interesting is that in the pamphlets from
+      1640 to 1650, the word 'parliament' appears to be the most prevalent word. This likely has to do with the English Civil War, which lasted from 1642 until
+      1651. The Civil War was made up of a series of upsets, where Parliamentarians fought against Royalists in order to establish the right of Parliament to 
+      participate in government. The Civil War marked a turning point in English history, challenging the idea of absolute monarchy.
+    </p>
+    </div>
+   
+  </body>
+</html>
