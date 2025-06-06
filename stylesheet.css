@@ -32,4 +32,85 @@ h2 {
 /* Paragraphs */
 p {
   max-width: 800px;
-  margin
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 1.1em;
+  background-color: #fffdf6;
+  border: 1px solid #e0d5c1;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+}
+
+/* Links */
+a:link, a:visited {
+  background-color: #7e4a35;
+  color: #fcebd0;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover, a:focus {
+  background-color: #5a3325;
+}
+
+/* Buttons */
+button {
+  font-family: 'Georgia', serif;
+  background-color: #a36d4f;
+  color: #fffdf6;
+  border: none;
+  padding: 10px 16px;
+  margin: 4px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7d4d39;
+}
+
+/* Flex layout containers */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #8b6f47;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.button-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Optional decorative styling */
+hr {
+  border: 0;
+  height: 1px;
+  background: #c6b49b;
+  margin: 40px auto;
+  max-width: 60%;
+}
+
+footer {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 0.9em;
+  color: #7c6a58;
+}
