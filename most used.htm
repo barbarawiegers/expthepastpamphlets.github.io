@@ -3,16 +3,22 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Exploring the Past Final Assignment</title>
     <script>
-    function myFunction() {
-    document.getElementById("demo").innerHTML = "<img src="most used.png" alt="Graph showing the 10 most used words in English pamphlets from the 17th century">";
-    }
+      function show(){
+      document.getElementById('image')
+                .style.display = "block";
+      document.getElementById('btnID')
+                .style.display = "none";
+      }
 </script>
   </head>
   <body>
     <h1>English pamphlets in the seventeenth century</h1>
     <h2>Most used words in English pamphlets in the seventeenth century</h2>
-    <p id="demo"></p>
-    <button type="button" onclick="myFunction()">Try it</button>
+     <button type="button" onclick="show()" id="btnID">
+        Show Image
+    </button>
+    <img id="image" src = "most used.png">
+    <button type="button" onclick="show()" id="btnID">Try it</button>
   </body>
 </html>
 
