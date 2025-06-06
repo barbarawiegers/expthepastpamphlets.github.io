@@ -4,15 +4,19 @@
     <title>Exploring the Past Final Assignment</title>
     <script>
       function show(){
-      document.getElementById('image')
+      document.getElementById('overall')
                 .style.display = "block";
-      document.getElementById('btnID')
-                .style.display = "none";
+      /*document.getElementById('btnID')
+                .style.display = "none";*/
+      }
+      function show0(){
+        document.getElementById('0')
+        .style.display = "block"
       }
     </script>
     <style>
      /* Set display to none for image*/
-    #image {
+    #overall {
         display: none;
     }
     </style>
@@ -20,10 +24,11 @@
   <body>
     <h1>English pamphlets in the seventeenth century</h1>
     <h2>Most used words in English pamphlets in the seventeenth century</h2>
-     <button type="button" onclick="show()" id="btnID">
-        Show Image
-    </button>
-    <img id="image" src = "most used.png">
+    
+    <button type="button" onclick="show()" id="btnID">1600-1700</button>
+    <img id="overall" src = "most used.png">
+
+    <button type = "button" onclick="show0()">1600-1610</button>
   </body>
 </html>
 
